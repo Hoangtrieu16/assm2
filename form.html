@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/form.css">
+    
+    
+</head>
+<body>    
+    <div id="nav">
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="form.html">Form</a></li>
+        </ul>
+    </div>
+
+    <div class="cover">
+        <h2>Đăng kí thành viên</h2>
+        <form  action="" onsubmit="return kt()">
+            <div class="form" >
+                <label for="masv">Mã sinh viên</label><br>
+                <input id="masv" name="masv" type="text" class="form-control">
+                <div class="thieu" id="thieu"></div>
+            </div>
+
+            <div class="form" >
+                <label for="ten">Họ và Tên</label><br>
+                <input id="ten" name="ten" type="text" class="form-control">
+                <div id="thieu1" class="thieu"></div>
+            </div>
+
+            <div class="form" >
+                <label for="email">Email</label><br>
+                <input id="email" type="email" name="email" class="form-control">
+                <div id="thieu2" class="thieu"></div>
+            </div>
+
+            <div class="form" >
+                <fieldset class="fieldset">
+                    <legend>Giới tính</legend>
+                    <input type="radio" name="gioitinh" class="radio"> <span>Nam</span>
+                    <input type="radio" name="gioitinh" class="radio"> <span>Nữ</span>
+                </fieldset>
+                <div id="thieu3" class="thieu"></div>
+            </div>
+            
+            <div class="form" >
+                <fieldset class="fieldset">
+                    <legend>Sở thích</legend>
+                    <label for="">Thể thao</label>
+                    <input type="checkbox" class="sothich">
+                    <label for="">Du lịch</label>
+                    <input type="checkbox" class="sothich">
+                    <label for="">Âm nhạc</label>
+                    <input type="checkbox" class="sothich">
+                    <label for="">Ẩm thực</label>
+                    <input type="checkbox" class="sothich">
+                    <label for="">Khác</label>
+                    <input type="checkbox" class="sothich">
+                </fieldset>
+                <div id="thieu4" class="thieu"></div>
+            </div>
+
+            <div class="form" >
+                <label for="">Quốc tịch</label>
+                <select name="" id="quocgia" name="quocgia" class="select">
+                    <option value="0"></option>
+                    <option value="1">Việt Nam</option>
+                    <option value="2">Trung Quốc</option>
+                    <option value="3">Hàn Quốc</option>
+                    <option value="4">Mỹ</option>
+                    <option value="5">Italya</option>
+                </select>
+                <div id="thieu5" class="thieu"></div>
+            </div>
+
+            <div class="form" >
+                <label for="">Ghi chú</label><br>
+                <textarea name="" id="" cols="69" rows="10"></textarea>
+                <div id="thieu6" class="thieu"></div>
+            </div>
+            <hr>
+            <div class="form" >
+                <input type="submit" value="Đăng kí" class="form-button">
+            </div>
+        </form>
+    </div>
+    <script src="./js/form.js"></script>
+</body>
+</html>

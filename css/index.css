@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main{
+    width: 100%;
+}
+
+#nav{
+    width: 100%;
+    height: 80px;
+    background-color: orange;
+    text-align: center;
+}
+
+}
+#nav .nav-menu li{
+    display: inline-block;
+    line-height: 40px;
+    margin: 0 30px;
+}
+
+.nav-menu li a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+.nav-menu li:hover a{
+    color: blue;
+    box-shadow: 0 0 3px black;
+}
+
+.nav-menu img{
+    width: 40px;
+    left:20px;
+}
+
+#container{
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.icon-left{
+    position: absolute;
+    left: 80px;
+    border-radius: 50%;
+}
+
+.icon-right{
+    position: absolute;
+    right: 80px;
+    border-radius: 50%;
+}
+
+.ti-angle-right,
+.ti-angle-left{
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    margin: 12% 60px;
+    font-size: 50px;
+    background-color: #ccc;
+}
+
+.ti-angle-right:active,
+.ti-angle-left:active{
+    font-size: 40px;
+}
+
+.container-main{  
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.container-main img{
+    position: absolute;
+    width: 70%;
+    height: 500px;
+    box-sizing: border-box;
+}
+
+.button{
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    
+}
+
+.button button{
+    width: 50px;
+    height: 5px;
+    outline: 0;
+    border: 0;
+    background-color: #000;
+    margin: 0 2px;
+    cursor: pointer;
+    color: white;
+}
+.button button:hover{
+    background-color: orange;
+}
+#footer{
+    width: 100%;
+    height: 100px;
+    background-color:orange;
+    margin-top: 50px;
+}
+
+#footer p{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}

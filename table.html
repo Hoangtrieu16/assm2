@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/table.css">
+    
+</head>
+<body>
+    <div id="main">
+        <div id="nav">
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="form.html">Form</a></li>
+            </ul>
+        </div>
+
+        <div class="main-head">
+            <h2>Bán hàng</h2>
+            <select onchange="selectGia(this)">
+                <option value="0">Mức Giá</option>
+                <option value="1">100</option>
+                <option value="2">300</option>
+                <option value="3">500</option>
+            </select>
+            <hr>
+        </div>
+        <div class="main-table">
+            <table>
+                <thead>
+                    <tr>
+                        <td><input type="checkbox" onchange="checkAll(this)"></td>
+                        <th>Hàng hóa</th>
+                        <th>Đơn giá</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>Iphone12</td>
+                        <td>900</td>
+                        <td><input type="number" value="0" min="0" max="30" step="1" disabled></td>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>SamSung</td>
+                        <td>600</td>
+                        <td><input type="number" value="0" min="0" max="30" step="1" disabled></td>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>Nokia</td>
+                        <td>100</td>
+                        <td><input type="number" value="0" min="0" max="30" step="1" disabled></td>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>Xiaomi</td>
+                        <td>700</td>
+                        <td><input type="number" value="0" min="0" max="30" step="1" disabled></td>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>ViVo</td>
+                        <td>250</td>
+                        <td><input type="number" value="0" min="0" max="30" step="1" disabled></td>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>Oppo</td>
+                        <td>550</td>
+                        <td><input type="number" value="0" min="0" max="30" step="1" disabled></td>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>Sony</td>
+                        <td>450</td>
+                        <td><input type="number" value="0" min="0" max="30" step="1" disabled></td>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th colspan="4" >Tổng</th>
+                        <th id="tongtien"></th>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+    <script src="./js/table.js"></script>
+
+</body>
+</html>
